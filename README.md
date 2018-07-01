@@ -51,24 +51,24 @@ robot -id xxxxxxxxxxxxxxx \
     目前只上传程序在此，代码待挖矿结束后提供。  
     https://github.com/gpmn/coinex_robot  
     
-名利行参数  
-	-discount float
-	在找到的价格点基础上调整多少入场，默认0.0001，按rsym计。 (default 0.0001)
-	-id string
-    	API ID。
-	-interval int
-	每一轮检查间隔秒数 (default 3)
-	-key string
-	API Secret。
-	-lsym string
-	交易对中的左值，比如BTCUSDT中的BTC。
-	-rsym string
-	默认USDT，交易对中的右值，即BTCUSDT中的USDT。 (default "USDT")
-	-unit float
-	单次开仓的最大量，lsym计。
-	-volignore float
-	如果小于这个量，就不开仓，按lsym计算
-	-volin float
-	在累计挂单量到这个阈值之前挂单，按lsym计。
-	-volout float
-	之前挂单量超过这个阈值就撤销重新挂，建议三倍volin，按lsym计。
+命令行参数  
+    -discount float    
+        在找到的价格点基础上调整多少入场，默认0.0001，按rsym计。 (default 0.0001)  
+    -id string  
+        API ID。  
+    -interval int  
+        每一轮检查间隔秒数 (default 3)  
+    -key string  
+        API Secret。  
+    -lsym string  
+        交易对中的左值，比如BTCUSDT中的BTC。  
+    -rsym string  
+        默认USDT，交易对中的右值，即BTCUSDT中的USDT。 (default "USDT")  
+    -unit float  
+        单次开仓的最大量，lsym计。  
+    -volignore float  
+        如果小于这个量，就不开仓，按lsym计算  
+    -volin float  
+        在累计挂单量到这个阈值之前挂单，按lsym计。  
+    -volout float  
+        之前挂单量超过这个阈值就撤销重新挂，建议三倍volin，按lsym计。  
