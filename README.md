@@ -9,6 +9,8 @@
 	v1.1   增加了一个interval参数，默认是3，即3秒尝试一次交易。有需要的话可以改成1，甚至0。  
 	v1.2   修改了一个bug，在给定的volin过大的时候，老版本会尝试在100000000卖，0.000000001买，而且不会自动关单，修改此错误。 
 	v1.2.1 压缩包密码错了，我自己都解不开，重新传一个，内容不变，md5校验值不变。
+	v1.3   1).interval参数从1秒为单位，改为1tick即百分之一秒为单位。
+	       2).新增一个exchange参数，支持fcoin、bigone、coinex，默认coinex。
 
 
 自我介绍  
@@ -57,10 +59,12 @@
 
     -discount float    
         在找到的价格点基础上调整多少入场，默认0.0001，按rsym计。 (default 0.0001)  
+    -exchange string  
+        one of coinex/bigone/fcoin, will support more later (default "coinex")  
     -id string  
         API ID。  
     -interval int  
-        每一轮检查间隔秒数 (default 3)  
+        每一轮检查间隔tick数，1tick==10毫秒,即百分之1秒。 (default 100)    
     -key string  
         API Secret。  
     -lsym string  
