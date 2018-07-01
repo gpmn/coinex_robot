@@ -37,15 +37,15 @@
     如果纯粹以刷量为目的，volin,volout调小，discount调大。  
     如果试图主动赢利，把volin,volout调大，discount调小。  
     
-robot -id xxxxxxxxxxxxxxx \
-   -key xxxxxxxxxxxxxxxx \
-   -discount 0.01 \
-   -lsym ETH \
-   -rsym USDT \
-   -unit 0.01 \
-   -volignore 0.005\
-   -volin 0.1 \
-   -volout 0.3  
+    robot -id xxxxxxxxxxxxxxx \
+        -key xxxxxxxxxxxxxxxx \
+        -discount 0.01 \
+        -lsym ETH \
+        -rsym USDT \
+        -unit 0.01 \
+        -volignore 0.005\
+        -volin 0.1 \
+        -volout 0.3  
    
 归档  
 
