@@ -52,6 +52,7 @@ robot -id xxxxxxxxxxxxxxx \
     https://github.com/gpmn/coinex_robot  
     
 命令行参数  
+
     -discount float    
         在找到的价格点基础上调整多少入场，默认0.0001，按rsym计。 (default 0.0001)  
     -id string  
