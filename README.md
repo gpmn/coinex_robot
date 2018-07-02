@@ -83,6 +83,6 @@
     -volout float  
         之前挂单量超过这个阈值就撤销重新挂，建议三倍volin，按lsym计。  
     -uplimit float
-        大于这个极端值不开仓，请酌情配置。 (default 1e+13)
+        大于这个极端值不开仓，lsym/rsym计算，即价格，请酌情配置。 (default 1e+13)
     -downlimit float
-        小于这个极端值不开仓，请酌情配置。 (default 1e-13)
+        小于这个极端值不开仓，lsym/rsym计算，即价格，请酌情配置。 (default 1e-13)
