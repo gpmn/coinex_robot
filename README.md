@@ -13,6 +13,10 @@
 	       2).新增一个exchange参数，支持fcoin、bigone、coinex，默认coinex。
 	v1.4   解决bug -- 会连续关单多次，导致被服务器流控;同时在被服务器流控后，主动延时5秒钟后再重新工作。
 	v1.5   增加了开单上限、下限控制，避免极端行情入市交易被割韭菜。
+	v1.6   1).由于bigone接口变更，之前的版本不能交易bigone，重新适配bigone接口。
+               2).新增diff参数，用以控制开仓间隔，默认三倍discount。
+	       3).美化了一下打印
+	       4).之前连续关单导致被流控的问题没有彻底解决，这次一起处理掉。
 
 自我介绍  
 
@@ -41,15 +45,19 @@
     如果纯粹以刷量为目的，volin,volout调小，discount调大。  
     如果试图主动赢利，把volin,volout调大，discount调小。  
     
-    robot -id xxxxxxxxxxxxxxx \
-        -key xxxxxxxxxxxxxxxx \
-        -discount 0.01 \
-        -lsym ETH \
+    ./robot -id XXXXXXXXXXXXX \
+        -key YYYYYYYYYYYYYYY \
+        -discount 0.001 \
+        -lsym ONE \
         -rsym USDT \
-        -unit 0.01 \
-        -volignore 0.005\
-        -volin 0.1 \
-        -volout 0.3  
+        -unit 30 \
+        -volignore 10\
+        -volin 3000.0\
+        -volout 50000.0 \
+        -interval 100 \
+        -diff 0.1 \
+        -exchange bigone
+
    
 归档  
 
