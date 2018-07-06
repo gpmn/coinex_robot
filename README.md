@@ -109,7 +109,7 @@
     通常是时间和服务器不同步导致的。linux打开ntp服务，windows点击右下时钟小窗口，调整为自动设置时间。  
     
  #### 接入bigone报告connection error  
-    bigone被封，需要翻墙。windows下用set如下设置，可以加到批处理开头：  
+    bigone被封，需要翻墙。windows下用set如下设置，代理地址酌情修改，可以加到批处理开头：  
     set http_proxy=http://127.0.0.1:1189  
     set https_proxy=http://127.0.0.1:1189  
     Linux下把set改成export，加到脚本开头。  
