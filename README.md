@@ -7,9 +7,10 @@
 大家数到大钱的话，可以给我EOS小费打赏，帐号：testgambling，谢谢大家！
 
 ## 終章  
-	挖矿红利逐渐结束了，现在的coinex加上返佣、分红勉强打平。参数调整的好的话，可能会小有收益。  
-	我这个程序也就不用再保密了，大家可以自行编译。大家以后有什么意见、建议、新策略，欢迎和我交流。
-	![太平一犬](https://github.com/gpmn/coinex_robot/raw/master/webwxgetmsgimg.jpg)
+	挖矿红利逐渐结束了，现在的coinex加上返佣、分红勉强打平。参数调整的好的话，可能会小有收益。   
+	我这个程序也就不用再保密了，大家可以自行编译。大家以后有什么意见、建议、新策略，欢迎和我交流。  
+	
+![太平一犬](https://github.com/gpmn/coinex_robot/raw/master/webwxgetmsgimg.jpg)
 	
 ## 修改历史  
 
@@ -120,11 +121,11 @@
     Linux下把set改成export，加到脚本开头。  
     
  #### 刷亏了？？  
-    首先请读一下这个 [策略说明](http://8btc.com/thread-93841-1-1.html)  
+    首先请读一下策略说明。  
     我们这个策略主要目的不是赢利，而是争取在亏得不多的前提下刷量。  
     如果要刷量，把volin，volout都调小。如果要减小交易亏损，把volin，volout调大。  
     而且，两种情况下，unit都不能太大。  
     volin,volout太小，会导致我们这个策略从被动等着被大单扫，变成主动做市的一方，不符合本来的意图。  
     随着coinex红利减小，建议稍微调大volin和voluot，增加安全垫。  
-
+[策略说明](http://8btc.com/thread-93841-1-1.html)  
 
