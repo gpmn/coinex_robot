@@ -247,7 +247,7 @@ func (robot *Robot) monitor() error {
 			log.Printf("Robot.Monitor - 提示：CoinEx暂停开仓 : 当前难度%.3f > 限制难度%.3f * 退出比例%.2f", cur, limit, robot.exit)
 			return nil
 		}
-		log.Printf("CoinEx 当前难度%.3 < 限制难度%.3f * 退出比例%.2f", cur, limit, robot.exit)
+		log.Printf("CoinEx 当前难度%.3f < 限制难度%.3f * 退出比例%.2f", cur, limit, robot.exit)
 	}
 
 	// 尝试买
