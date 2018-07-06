@@ -103,19 +103,21 @@
 
 
 ## 使用疑问  
-    #### 接入coinex，报告tonce超过服务器时间1分钟以上  
+
+#### 接入coinex，报告tonce超过服务器时间1分钟以上  
     通常是时间和服务器不同步导致的。linux打开ntp服务，windows点击右下时钟小窗口，调整为自动设置时间。  
     
-    #### 接入bigone报告connection error  
+ #### 接入bigone报告connection error  
     bigone被封，需要翻墙。windows下用set如下设置，可以加到批处理开头：  
     set http_proxy=http://127.0.0.1:1189  
     set https_proxy=http://127.0.0.1:1189  
     Linux下把set改成export，加到脚本开头。  
     
-    #### 刷亏了？？  
+ #### 刷亏了？？  
     首先请读一下这个 [策略说明](http://8btc.com/thread-93841-1-1.html)  
     我们这个策略主要目的不是赢利，而是争取在亏得不多的前提下刷量。  
-    如果要刷量，把volin，volout都调小。如果要减小交易亏损，把volin，volout调大。两种情况下，unit都不能太大。  
+    如果要刷量，把volin，volout都调小。如果要减小交易亏损，把volin，volout调大。  
+    而且，两种情况下，unit都不能太大。  
     volin,volout太小，会导致我们这个策略从被动等着被大单扫，变成主动做市的一方，不符合本来的意图。  
     随着coinex红利减小，建议稍微调大volin和voluot，增加安全垫。  
 
